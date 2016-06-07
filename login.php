@@ -30,6 +30,7 @@
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
                 <li class="active"><a href="pocetna.php">Početna</a></li>
+                <li class="active"><a href="register.php">Registriraj se!</a></li>
                 
             </ul>
         </div><!--/.nav-collapse -->
