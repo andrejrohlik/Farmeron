@@ -12,7 +12,7 @@
 
 <p>
     <?php
-    $sql = "INSERT INTO users (username, password, name , surname) VALUES ('" . $_POST['username'] . "', '" . $_POST['password'] . "', '" . $_POST['name'] . "', '" . $_POST['surname'] . "')";
+    $sql = "INSERT INTO users (username, password, name , surname) VALUES ('" . htmlspecialchars($_POST['username']) . "', '" . htmlspecialchars($_POST['password']) . "', '" . htmlspecialchars($_POST['name']) . "', '" . htmlspecialchars($_POST['surname']) . "')";
     $result = $conn->query($sql);
 
     echo('Vi ste se registrirali. Hvala Vam na tome!<br>');
